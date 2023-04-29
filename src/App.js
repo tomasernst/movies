@@ -6,6 +6,7 @@ function App() {
   const [title, setTitle] = useState('');
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
+  
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
@@ -41,7 +42,7 @@ function App() {
           className="border border-gray-400 rounded px-2 py-1 w-64"
           placeholder="Enter a movie title"
         />
-        <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white rounded px-4 py-1">
+        <button type="submit" className="bg-sky-600 hover:bg-sky-700 text-white rounded px-4 py-1">
           Submit
         </button>
       </div>
@@ -50,8 +51,13 @@ function App() {
     {movieData && (
       <div className="border border-gray-400 rounded p-4 mt-4">
         <h2 className="text-xl font-bold mb-2">{movieData.Title}</h2>
-        <p className="mb-2">Year: {movieData.Year}</p>
-        <p className="mb-2">Plot: {movieData.Plot}</p>
+        <p className="mb-2 ">Year: {movieData.Year}</p>
+        <p className="mb-2 ">Runtime: {movieData.Runtime}</p>
+        <p className="mb-2 ">Genre: {movieData.Genre}</p>
+        <p className="mb-2 ">Director: {movieData.Director}</p>
+        <p className="mb-2 ">Actors: {movieData.Actors}</p>
+        <p className="mb-2 ">IMDB Rating: {movieData.imdbRating}</p>
+        <p className="mb-2 ">Plot: {movieData.Plot}</p>
       </div>
       )}
     </div>

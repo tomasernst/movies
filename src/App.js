@@ -15,7 +15,7 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.get(`http://www.omdbapi.com/?apikey=e0ca2e4d&t=${title}`)
+    axios.get(`https://www.omdbapi.com/?apikey=e0ca2e4d&t=${title}`)
       .then(response => {
         setMovieData(response.data);
         setError(null);

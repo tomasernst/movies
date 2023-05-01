@@ -16,4 +16,4 @@ npm start
 ```terminal
 npm start
 ```
-Vary small project to try a movie API.
+Very small project to try a movie API.
